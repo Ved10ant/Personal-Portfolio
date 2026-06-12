@@ -1,0 +1,78 @@
+@import "tailwindcss";
+body {
+  font-family: "Clash Display", "Clash Display Placeholder", sans-serif;
+  color: white;
+  background-color: #161616;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate-infinite {
+  animation: rotate 9s linear infinite;
+}
+
+.slideranimation {
+  animation-name: moveanimation;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.slideranimation1 {
+  animation-name: moveanimation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.slideranimation2 {
+  animation-name: moveanimation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.slideranimation3 {
+  animation-name: moveanimation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.movelink {
+  opacity: 0;
+}
+.link:hover .movelink {
+  opacity: 1;
+}
+
+@keyframes moveanimation {
+  to {
+    transform: translateX(0);
+  }
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.textslideranimation {
+  animation-name: slideranimation;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.textslideranimation1 {
+  animation-name: slideranimation;
+  animation-duration: 14s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes slideranimation {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

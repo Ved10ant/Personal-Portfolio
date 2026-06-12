@@ -1,0 +1,13 @@
+const { body } = require("express-validator");
+
+contactValidation = [
+  body("name").notEmpty().withMessage("Name is required"),
+
+  body("email").isEmail().withMessage("Valid email is required"),
+
+  body("message").notEmpty().withMessage("Message is required"),
+
+  body("services").notEmpty().withMessage("Message is required"),
+];
+
+module.exports = contactValidation;
