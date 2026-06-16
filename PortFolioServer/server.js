@@ -22,7 +22,7 @@ app.use(
       }
 
       // Allow your production frontend
-      if (origin === "https://your-frontend.vercel.app") {
+      if (origin === "https://personal-portfolio-one-sage-90.vercel.app" || origin === process.env.FRONTEND_URL) {
         return callback(null, true);
       }
 
